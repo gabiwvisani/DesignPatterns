@@ -14,13 +14,10 @@ CalculoMG, CalculoRJ, CalculoSP: Implementações concretas da interface Calculo
 ###Exemplo de Uso
 
 public class ImpostoPorEstado {
-
     public Calculo calculo;
-
     public ImpostoPorEstado(Calculo calculo) {
         this.calculo = calculo;
     }
-
     public static void main(String[] args) {
         // Exemplo de cálculo de imposto para São Paulo
         ImpostoPorEstado impostoPorEstado = new ImpostoPorEstado(new CalculoSP());
@@ -28,4 +25,5 @@ public class ImpostoPorEstado {
         System.out.println("Imposto para São Paulo: " + impostoSP);
     }
 }
+
 Neste exemplo, um objeto ImpostoPorEstado é criado com base na estratégia de cálculo de imposto para o estado de São Paulo (CalculoSP). O método calcular() é então chamado para calcular o imposto com base no valor fornecido.
